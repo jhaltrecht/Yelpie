@@ -1,2 +1,2 @@
-# Yelp
-Full-Stack Yelp App
+# Yelpie
+Full-Stack Yelp Clone App
