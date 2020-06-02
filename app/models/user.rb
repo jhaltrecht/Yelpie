@@ -9,11 +9,7 @@ class User < ApplicationRecord
 
   has_many :reviews,
     foreign_key: :author_id
-    
-  has_many :favorites
-  has_many :favorite_benches,
-    through: :favorites,
-    source: :bench
+   
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)
