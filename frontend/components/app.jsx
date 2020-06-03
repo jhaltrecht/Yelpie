@@ -27,8 +27,9 @@ const App = () => (
                 </ul>
         <Link to="/" className="header-link">
 
-                <h1>Yelpie</h1>
-                 
+                <h1>Yelpie
+                    <img src="<%= image_url('yelp.png') %>" />
+                    </h1>
             </Link>
         </header>
         </div>
@@ -39,7 +40,11 @@ const App = () => (
             <Route path="/reviews/:reviewId" component={ReviewShowContainer} /> */}
             {/* <Route exact path="/" component={SearchContainer} /> */}
         </Switch>
+
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
     </div>
+    
 );
 
 export default App;
