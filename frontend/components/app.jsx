@@ -20,18 +20,16 @@ const App = () => (
     <div>
         <div className="front-page">
         <header className="app-header">
-            <Link to="/" className="header-link">
-                <ul className="nav-list">
-                    <li><a href="default.asp">Write a Review</a></li>
-  
-                    <li><a href="about.asp">Log In</a></li>
-                    <li><a href="about.asp">Sign Up</a></li>
+                <ul className="nav-bar">
+                    <li> <GreetingContainer /></li>
+                    <li> <a href="/review">Write a Review</a></li>
 
                 </ul>
-                <nav></nav>
+        <Link to="/" className="header-link">
+
                 <h1>Yelpie</h1>
+                 
             </Link>
-            <GreetingContainer />
         </header>
         </div>
         <Switch>
