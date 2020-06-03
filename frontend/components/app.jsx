@@ -27,10 +27,10 @@ const App = () => (
 
                 </ul>
         <Link to="/" className="header-link">
+                <h1>Yelpie</h1>
+                <img src="../assets/yelp.png" alt=""/>
+                    {/* <img src="<%= image_url('yelp.png') %>" /> */}
 
-                <h1>Yelpie
-                    <img src="<%= image_url('yelp.png') %>" />
-                    </h1>
             </Link>
         </header>
         </div>
