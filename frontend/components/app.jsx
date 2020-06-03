@@ -21,15 +21,16 @@ const App = () => (
         <div className="front-page">
         <header className="app-header">
                 <ul className="nav-bar">
-                    <li> <a href="/review">Write a Review</a></li>
-                    <li> <GreetingContainer /></li>
+                    <li className="review-li"> <a href="/review">Write a Review</a></li>
+                    <li className="greeting-li"> <GreetingContainer /></li>
 
 
                 </ul>
         <Link to="/" className="header-link">
-                <h1>Yelpie</h1>
-                <img src="../assets/yelp.png" alt=""/>
-                    <img src="<%= image_url('yelp.png') %>" />
+                <h1 className="logo-name">yelpie<img className="yelp-logo" src="../assets/yelp.png" alt="" />
+
+                </h1>
+                    {/* <img src="<%= image_url('yelp.png') %>" /> */}
 
             </Link>
         </header>
