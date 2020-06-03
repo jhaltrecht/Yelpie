@@ -21,8 +21,9 @@ const App = () => (
         <div className="front-page">
         <header className="app-header">
                 <ul className="nav-bar">
-                    <li> <GreetingContainer /></li>
                     <li> <a href="/review">Write a Review</a></li>
+                    <li> <GreetingContainer /></li>
+
 
                 </ul>
         <Link to="/" className="header-link">
