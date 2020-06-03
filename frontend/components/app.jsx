@@ -8,7 +8,7 @@ import {
     HashRouter
 } from 'react-router-dom';
 
-// import GreetingContainer from './greeting/greeting_container';
+import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 // import SearchContainer from './search/search_container';
@@ -18,12 +18,22 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
     <div>
-        <header>
+        <div className="front-page">
+        <header className="app-header">
             <Link to="/" className="header-link">
+                <ul className="nav-list">
+                    <li><a href="default.asp">Write a Review</a></li>
+  
+                    <li><a href="about.asp">Log In</a></li>
+                    <li><a href="about.asp">Sign Up</a></li>
+
+                </ul>
+                <nav></nav>
                 <h1>Yelpie</h1>
             </Link>
-            {/* <GreetingContainer /> */}
+            <GreetingContainer />
         </header>
+        </div>
         <Switch>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />

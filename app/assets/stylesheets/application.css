@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a{
+    color:white;
+}
+.front-page{
+    background-image: url(../images/dan-gold-4_jhDO54BYg-unsplash.jpg);
+    z-index: -1;
+}
+
+.nav-list a :hover{
+    border-bottom: 1px white;
+}
+
+ .app-header{
+
+ }
+
+ .header-link{
+    text-decoration: none;
+ }
