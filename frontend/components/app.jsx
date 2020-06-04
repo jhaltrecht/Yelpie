@@ -27,9 +27,16 @@ const App = () => (
 
                 </ul>
         <Link to="/" className="header-link">
-                <h1 className="logo-name">yelpie<img className="yelp-logo" src="../assets/yelp.png" alt="" />
-
-                </h1>
+                {/* <h1 className="logo-name">yelpie<img className="yelp-logo" src="../assets/yelp.png" alt="" />
+                
+                </h1> */}
+                    <div className="logo-name">
+                        <h1 className="logo-name">yelpie
+                        <a href="/">
+                            <img className="yelp-logo" src={window.logo} />
+                        </a>
+                        </h1>
+                    </div>
                     {/* <img src="<%= image_url('yelp.png') %>" /> */}
 
             </Link>
@@ -43,7 +50,7 @@ const App = () => (
             {/* <Route exact path="/" component={SearchContainer} /> */}
         </Switch>
 
-        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <div className="credit">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
     </div>
     
