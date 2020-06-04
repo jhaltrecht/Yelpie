@@ -19,7 +19,6 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 const App = () => (
     <div>
         <div className="front-page">
-        <header className="app-header">
                 <ul className="nav-bar">
                     <li className="review-li"> <a href="/review">Write a Review</a></li>
                     <li className="greeting-li"> <GreetingContainer /></li>
@@ -37,10 +36,8 @@ const App = () => (
                         </a>
                         </h1>
                     </div>
-                    {/* <img src="<%= image_url('yelp.png') %>" /> */}
 
             </Link>
-        </header>
         </div>
         <Switch>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
