@@ -63,6 +63,9 @@ font-size: 50px;
 .credit{
     margin-top: 500px;
 }
+.errors{
+    color: red;
+}
 .yelp-logo{
     width: 60px;
     height: 60px;
@@ -80,8 +83,7 @@ font-size: 50px;
     border-bottom: 2px solid white;
 }
 .login-form-container{
-/* text-align: center; */
-margin: auto auto;
+text-align: center;
 }
 
 

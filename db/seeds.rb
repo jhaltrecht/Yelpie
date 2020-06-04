@@ -29,5 +29,57 @@ b2=Business.create!(
 b3=Business.create!(
     name:'Dairy King'
 )
+
+b3=Business.create!(
+    name:"Tom's hardware"
+)
+
+b4=Business.create!(
+    name:'Rodgers Burgers'
+)
+
+b5=Business.create!(
+    name:'Candy Shop'
+)
+
+b6=Business.create!(
+    name:'Apples Bar'
+)
+
+b7=Business.create!(
+    name:'Barneys Beanery'
+)
+
+b8=Business.create!(
+    name:'Ericks Eels '
+)
+
+b9=Business.create!(
+    name:'Funky Grill'
+)
+
+b10=Business.create!(
+    name:'Grapes shop'
+)
+
+
+b12=Business.create!(
+    name:'I Love Pizza'
+)
+
+b13=Business.create!(
+    name:'Jamba Juice'
+)
+
+b14=Business.create!(
+    name:'Krazy Kangaroos'
+)
+
+b15=Business.create!(
+    name:'Lemon Shop'
+)
+
+
+
 Review.create(author_id: u1.id, business_id:  b1.id, body: "very good service", rating: 2)
 Review.create(author_id: u2.id, business_id:  b2.id, body: "its okay", rating: 3)
