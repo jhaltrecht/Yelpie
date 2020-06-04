@@ -29,16 +29,14 @@ const App = () => (
                 {/* <h1 className="logo-name">yelpie<img className="yelp-logo" src="../assets/yelp.png" alt="" />
                 
                 </h1> */}
-                    <div className="logo-name">
                         <h1 className="logo-name">yelpie
                         <a href="/">
                             <img className="yelp-logo" src={window.logo} />
                         </a>
                         </h1>
-                    </div>
 
             </Link>
-        </div>
+        
         <Switch>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
@@ -49,6 +47,7 @@ const App = () => (
 
         <div className="credit">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
+    </div>
     </div>
     
 );
