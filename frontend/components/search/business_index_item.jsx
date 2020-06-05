@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import BusinessShowContainer from '../business_show/business_show_container';
+// import BusinessShowContainer from '../business_show/business_show_container';
 
-class IndexItem extends React.Component {
+class BusinessIndexItem extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
@@ -35,4 +35,4 @@ class IndexItem extends React.Component {
     }
 }
 
-export default withRouter(IndexItem);
+export default withRouter(BusinessIndexItem);
