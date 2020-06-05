@@ -21,63 +21,72 @@ u2 = User.create!(
 )
 
 b1=Business.create!(
-    name:'Burger King'
+    name:'Burger King',
+    lat: 34.019624,
+    lng: -118.469863,
+    description: "Most famous for being McDonalds' Fastfood rival.  Offers amazing Strawberry Milkshakes",
+    picture_url: "https://www.gettyimages.com/detail/photo/sign-of-burger-king-in-liverpool-royalty-free-image/458712729?adppopup=true"
 )
 b2=Business.create!(
-    name:'McDonalds'
+    name:'McDonalds',
+    picture_url:"https://lh5.googleusercontent.com/p/AF1QipO-46xdL8P2H3eeNp4HkrckjWAwgXnuBtL3sJ7F=w426-h240-k-no",
+    description: "Fastfood restaurant serving american burgers and fries",
+    lat:40.5775559,
+    lng:-74.10240269999997
 )
-b3=Business.create!(
-    name:'Dairy King'
-)
+# b3=Business.create!(
+#     name:'Dairy King'
+# )
 
-b3=Business.create!(
-    name:"Tom's hardware"
-)
+# b3=Business.create!(
+#     name:"Tom's hardware"
+# )
 
-b4=Business.create!(
-    name:'Rodgers Burgers'
-)
+# b4=Business.create!(
+#     name:'Rodgers Burgers'
+# )
 
-b5=Business.create!(
-    name:'Candy Shop'
-)
+# b5=Business.create!(
+#     name:'Candy Shop'
+# )
 
-b6=Business.create!(
-    name:'Apples Bar'
-)
+# b6=Business.create!(
+#     name:'Apples Bar'
+# )
 
-b7=Business.create!(
-    name:'Barneys Beanery'
-)
+# b7=Business.create!(
+#     name:'Barneys Beanery'
+# )
 
-b8=Business.create!(
-    name:'Ericks Eels '
-)
+# b8=Business.create!(
+#     name:'Ericks Eels '
+# )
 
-b9=Business.create!(
-    name:'Funky Grill'
-)
+# b9=Business.create!(
+#     name:'Funky Grill'
+# )
 
-b10=Business.create!(
-    name:'Grapes shop'
-)
+# b10=Business.create!(
+#     name:'Grapes shop'
+# )
 
 
-b12=Business.create!(
-    name:'I Love Pizza'
-)
+# b12=Business.create!(
+#     name:'I Love Pizza'
 
-b13=Business.create!(
-    name:'Jamba Juice'
-)
+# )
 
-b14=Business.create!(
-    name:'Krazy Kangaroos'
-)
+# b13=Business.create!(
+#     name:'Jamba Juice'
+# )
 
-b15=Business.create!(
-    name:'Lemon Shop'
-)
+# b14=Business.create!(
+#     name:'Krazy Kangaroos'
+# )
+
+# b15=Business.create!(
+#     name:'Lemon Shop'
+# )
 
 
 
