@@ -14,6 +14,10 @@
  *= require_self
  */
 
+.login-signup{
+    position: fixed;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -22,8 +26,8 @@ ul {
 }
 
 .nav-bar{
+    // pushes login and sign up to fill in available space
     display: flex;
-    justify-content: space-between;
 }
 
 
@@ -38,6 +42,7 @@ a{
 }
 .credit{
     color: white;
+
 }
 .logo-name{
     color: black;
@@ -47,7 +52,8 @@ text-align: center;
 // margin-top: 100px;
 font-size: 50px;
 // position: absolute;
-// position: fixed;
+position: fixed;
+margin-left: 500px;
 // position: sticky;
 
 }
@@ -64,10 +70,17 @@ font-size: 50px;
     margin-left: 170px;
 }
 .greeting-li{
-    margin-right: 170px;
+    margin-left: 900px;
 }
 .credit{
-    margin-top: 500px;
+    margin-top: 600px;
+        // position: fixed;
+    z-index: 20;
+}
+
+
+.review-li{
+position: fixed;
 }
 .errors{
     color: red;
@@ -80,15 +93,28 @@ font-size: 50px;
 }
 .front-page{
     background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(asset_path("dan-gold-4_jhDO54BYg-unsplash.jpg")) ;
-    background-size: cover;
+    background-size: cover ;
     background-attachment: fixed;
-     min-height: 750px;
-     min-width: 750px;
+    min-height: 100%;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+    //  min-height: 100%;
+    //  min-width: 100%;
 
 }
 
 .header-name{
     color: white;
+}
+.header-group{
+    position: fixed;
 }
 
 .nav-bar li{
@@ -106,6 +132,9 @@ background-color: white;
 width: 200px;
 margin: auto auto;
 padding: 30px;
+position: fixed;
+margin-left: 500px;
+margin-top: 120px;
 }
 
 
