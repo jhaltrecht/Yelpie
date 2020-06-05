@@ -1,7 +1,10 @@
 import React from 'react';
 import BusinessIndexItem from './business_index_item';
+// import { fetchBusinesses } from '../../util/business_util';
 
-const BusinessIndex = ({ businesses }) => (
+const BusinessIndex = ({ businesses, fetchBusinesses }) => {
+    fetchBusinesses()
+    return(
   <div>
     <h1>Businesses: </h1>
     {businesses.map(business => (
@@ -12,6 +15,8 @@ const BusinessIndex = ({ businesses }) => (
         // <h1>{business.name}</h1> 
     ))}
   </div>
-);
+    )
+
+    };
 
 export default BusinessIndex;

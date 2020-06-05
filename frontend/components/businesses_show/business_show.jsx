@@ -7,7 +7,7 @@
 // import { ProtectedRoute } from '../../util/route_util';
 // import { ReviewLink } from '../../util/link_util';
 
-// const BusinessShow = ({ business, businessId, fetchbusiness, reviews }) => {
+// const BusinessShow = ({ business, businessId, fetchBusiness, reviews }) => {
 //     const businesses = {
 //         [businessId]: business
 //     };
@@ -20,7 +20,7 @@
 //                     businesses={businesses}
 //                     businessId={businessId}
 //                     singlebusiness={true}
-//                     fetchbusiness={fetchbusiness}
+//                     fetchBusiness={fetchBusiness}
 //                 />
 //             </div>
 //             <div className="right-half business-details">
