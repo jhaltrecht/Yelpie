@@ -1,6 +1,6 @@
 import React from 'react';
 import BusinessIndexItem from './business_index_item';
-// import { fetchBusinesses } from '../../util/business_util';
+import Search from "./search"
 
 const BusinessIndex = ({ businesses, fetchBusinesses }) => {
 console.log(businesses)
@@ -8,7 +8,8 @@ console.log(businesses)
     fetchBusinesses()
   }
     return(
-  <div className="business-index-container">
+  <div className="business-index-container-div">
+    <div className="business-index-container">
     <h1>Businesses: </h1>
     <h3>Click on the business to leave a review</h3>
     {businesses.map(business => (
@@ -17,6 +18,10 @@ console.log(businesses)
         key={business.id}
       />
     ))}
+        </div>
+        <div className="search-index">
+          <Search businesses={businesses}  />
+        </div>
   </div>
     )
 

@@ -11,8 +11,10 @@ import {
 import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
-// import SearchContainer from './search/search_container';
-import BusinessIndexContainer from "./search/business_index_container"
+import BusinessIndexContainer from './search/business_index_container';
+// import BusinessIndexContainer from "./search/business_index_container"
+import BusinessShowContainer from "./businesses_show/business_show_container"
+
 // import ReviewShowContainer from './review_show/review_show_container';
 import ReviewFormContainer from './reviews/review_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
@@ -42,9 +44,12 @@ const App = () => (
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
             <ProtectedRoute exact path="/reviews/new" component={ReviewFormContainer} />
+             <Route exact path="/" component={BusinessIndexContainer} /> */}
             {/* <Route path="/reviews/:reviewId" component={ReviewShowContainer} /> 
-             <Route exact path="/" component={SearchContainer} /> */}
-            <Route exact path="/" component={BusinessIndexContainer} />
+
+            {/* <Route exact path="/" component={BusinessIndexContainer} /> */}
+         <Route exact path="/busiensses/:businessId" component={BusinessShowContainer} />
+
         </Switch>
 
         <div className="credit">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
