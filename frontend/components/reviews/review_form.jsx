@@ -9,22 +9,22 @@ class ReviewForm extends React.Component {
             body: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.navigateToBenchShow = this.navigateToBenchShow.bind(this);
+        this.navigateToBusinessShow = this.navigateToBusinessShow.bind(this);
     }
 
-    navigateToBenchShow() {
-        const url = `/benches/${this.props.match.params.benchId}`
+    navigateToBusinessShow() {
+        const url = `/businesses/${this.props.match.params.businessId}`
         this.props.history.push(url);
     }
 
     handleSubmit(e) {
         e.preventDefault();
-        const benchId = parseInt(this.props.match.params.benchId);
+        const businessId = parseInt(this.props.match.params.businessId);
         const review = Object.assign({}, this.state, {
-            bench_id: benchId
+            business_id: businessId
         });
         this.props.createReview(review);
-        this.navigateToBenchShow();
+        this.navigateToBusinessShow();
     }
 
     update(property) {
@@ -44,9 +44,10 @@ class ReviewForm extends React.Component {
                     />
                     <br />
 
+
+
                     <label>Comment</label>
                     <br />
-
                     <textarea
                         cols="30"
                         rows="10"
@@ -56,7 +57,7 @@ class ReviewForm extends React.Component {
                     <br />
                     <input type="submit" />
                 </form>
-                <button onClick={this.navigateToBenchShow}>Cancel</button>
+                <button onClick={this.navigateToBusinessShow}>Cancel</button>
             </div>
         );
     }

@@ -7,6 +7,6 @@ export const selectReviewsForBusiness = ({ businesses, reviews }, business) => {
 };
 
 // state.entities.businesses to businesses
-export const asArray = ({ businesses }) => (
+export const asArray = ( businesses ) => (
     Object.keys(businesses).map(key => businesses[key])
 );

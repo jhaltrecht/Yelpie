@@ -25,70 +25,63 @@ b1=Business.create!(
     lat: 34.019624,
     lng: -118.469863,
     description: "Most famous for being McDonalds' Fastfood rival.  Offers amazing Strawberry Milkshakes",
-    picture_url: "https://www.gettyimages.com/detail/photo/sign-of-burger-king-in-liverpool-royalty-free-image/458712729?adppopup=true"
+    picture_url: "https://cdn.pixabay.com/photo/2014/04/27/14/18/fast-food-333140_1280.jpg"
 )
 b2=Business.create!(
     name:'McDonalds',
-    picture_url:"https://lh5.googleusercontent.com/p/AF1QipO-46xdL8P2H3eeNp4HkrckjWAwgXnuBtL3sJ7F=w426-h240-k-no",
+    picture_url:"https://cdn.pixabay.com/photo/2016/11/22/23/23/french-fries-1851143_1280.jpg",
     description: "Fastfood restaurant serving american burgers and fries",
     lat:40.5775559,
     lng:-74.10240269999997
 )
-# b3=Business.create!(
-#     name:'Dairy King'
-# )
-
-# b3=Business.create!(
-#     name:"Tom's hardware"
-# )
-
-# b4=Business.create!(
-#     name:'Rodgers Burgers'
-# )
-
-# b5=Business.create!(
-#     name:'Candy Shop'
-# )
-
-# b6=Business.create!(
-#     name:'Apples Bar'
-# )
-
-# b7=Business.create!(
-#     name:'Barneys Beanery'
-# )
-
-# b8=Business.create!(
-#     name:'Ericks Eels '
-# )
-
-# b9=Business.create!(
-#     name:'Funky Grill'
-# )
-
-# b10=Business.create!(
-#     name:'Grapes shop'
-# )
+b3=Business.create!(
+     name:'Dairy Queen',
+     picture_url: "https://cdn.pixabay.com/photo/2018/05/10/22/42/ice-cream-3389010_1280.jpg",
+     description: "Ice Cream Drive Thru",
+     lat: 33.655857,
+     lng:	-117.999742
+ )
 
 
-# b12=Business.create!(
-#     name:'I Love Pizza'
 
-# )
+ b5=Business.create!(
+    name:'Lauries Candy Shop',
+     picture_url: "https://cdn.pixabay.com/photo/2013/08/10/18/13/pick-and-mix-171342_1280.jpg",
+     description: "Candy shop for young kids",
+     lat: 34.006375,
+     lng:	-118.223423
+ )
 
-# b13=Business.create!(
-#     name:'Jamba Juice'
-# )
 
-# b14=Business.create!(
-#     name:'Krazy Kangaroos'
-# )
+ b7=Business.create!(
+     name:'Barneys Beanery',
+    picture_url: "https://cdn.pixabay.com/photo/2015/09/02/13/26/glasses-919071_1280.jpg",
+     description: "Sports bar and restaurant",
+     lat: 34.090877,
+     lng:	-118.374625
+ )
 
-# b15=Business.create!(
-#     name:'Lemon Shop'
-# )
+ b12=Business.create!(
+     name:'Pizza Hut',
+    picture_url: "https://cdn.pixabay.com/photo/2015/11/11/21/03/pizza-1039262_1280.jpg",
+     description: "Fastfood Pizza drive-thru",
+     lat: 	34.040077,
+     lng:-118.46504
+ )
+
+ b13=Business.create!(
+     name:'Jamba Juice',
+    picture_url: "https://cdn.pixabay.com/photo/2017/04/23/09/49/smoothies-2253430_1280.jpg",
+     description: "A casual quick restaurant that offers smoothies and Acai Bowls",
+     lat: 	34.047466,
+     lng:-118.44348
+)
+
+
 
 
 
 Review.create(author_id: u1.id, business_id:  b1.id, body: "very good service", rating: 2)
 Review.create(author_id: u2.id, business_id:  b2.id, body: "its okay", rating: 3)
+Review.create(author_id: u1.id, business_id:  b5.id, body: "very good options", rating: 2)
+

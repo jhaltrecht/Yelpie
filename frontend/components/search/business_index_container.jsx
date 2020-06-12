@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { asArray } from '../../reducers/selectors';
 
 const mapStateToProps = state => ({
-    businesses: asArray(state.entities),
+    businesses: asArray(state.entities.businesses),
 });
 
 const mapDispatchToProps = dispatch => ({

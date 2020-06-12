@@ -14,14 +14,14 @@ import LogInFormContainer from './session_form/login_form_container';
 // import SearchContainer from './search/search_container';
 import BusinessIndexContainer from "./search/business_index_container"
 // import ReviewShowContainer from './review_show/review_show_container';
-// import ReviewFormContainer from './review_form/review_form_container';
+import ReviewFormContainer from './reviews/review_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
     <div>
         <div className="front-page">
                 <ul className="nav-bar">
-                    <li className="review-li"> <a href="/review">Write a Review</a></li>
+                    {/* <li className="review-li"> <a href="/reviews/new">Write a Review</a></li> */}
                     <li className="greeting-li"> <GreetingContainer /></li>
 
 
@@ -41,9 +41,9 @@ const App = () => (
         <Switch>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-            {/* <ProtectedRoute exact path="/reviews/new" component={ReviewFormContainer} />
-            <Route path="/reviews/:reviewId" component={ReviewShowContainer} /> */}
-            {/* <Route exact path="/" component={SearchContainer} /> */}
+            <ProtectedRoute exact path="/reviews/new" component={ReviewFormContainer} />
+            {/* <Route path="/reviews/:reviewId" component={ReviewShowContainer} /> 
+             <Route exact path="/" component={SearchContainer} /> */}
             <Route exact path="/" component={BusinessIndexContainer} />
         </Switch>
 
