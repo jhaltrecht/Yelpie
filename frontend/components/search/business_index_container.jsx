@@ -1,4 +1,5 @@
 import BusinessIndex from "./business_index.jsx";
+import { updateFilter } from '../../actions/filter_actions';
 
 import {  fetchBusinesses} from "../../actions/business_actions";
 import { connect } from 'react-redux';
@@ -10,9 +11,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-        fetchBusinesses: id => dispatch(fetchBusinesses())
-
-    // updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
+    fetchBusinesses: id => dispatch(fetchBusinesses()),
+    updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
 });
 
 export default connect(

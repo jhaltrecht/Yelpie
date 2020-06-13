@@ -2,7 +2,7 @@ import React from 'react';
 import BusinessIndexItem from './business_index_item';
 import Search from "./search"
 
-const BusinessIndex = ({ businesses, fetchBusinesses }) => {
+const BusinessIndex = ({ businesses, fetchBusinesses,updateFilter }) => {
 console.log(businesses)
   if (businesses.length===0){
     fetchBusinesses()
@@ -10,7 +10,8 @@ console.log(businesses)
     return(
   <div className="business-index-container-div">
         <div className="search-index">
-          <Search businesses={businesses} />
+          <Search businesses={businesses} 
+          updateFilter={updateFilter}/>
         </div>
     <div className="business-index-container">
     <h1>Businesses: </h1>

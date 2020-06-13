@@ -4,12 +4,12 @@ import React from 'react';
 import BusinessIndex from './business_index';
 import BusinessMap from './../business_map/business_map';
 
-const Search = ({ businesses}) => (
+const Search = ({ businesses,updateFilter}) => (
     <div className="user-pane">
         <div className="left-half">
             <BusinessMap
                 businesses={businesses}
-                // updateFilter={updateFilter}
+                updateFilter={updateFilter}
                 // singleBusiness={false}
             />
         </div>

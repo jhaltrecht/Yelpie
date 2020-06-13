@@ -4,12 +4,11 @@ import { withRouter } from 'react-router-dom';
 import MarkerManager from '../../util/marker_manager';
 
 
-// import MarkerManager from '../../util/marker_manager';
 
-// const getCoordsObj = latLng => ({
-//     lat: latLng.lat(),
-//     lng: latLng.lng()
-// });
+const getCoordsObj = latLng => ({
+    lat: latLng.lat(),
+    lng: latLng.lng()
+});
 
 
 
@@ -24,6 +23,7 @@ class BusinessMap extends React.Component {
         };
         this.map = new google.maps.Map(this.refs.map, mapOptions);
         this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
+        this.registerListeners();
 
 
     }
@@ -33,7 +33,18 @@ class BusinessMap extends React.Component {
     }
 
     registerListeners() {
-       
+        google.maps.event.addListener(this.map, 'idle', () => {
+            const { north, south, east, west } = this.map.getBounds().toJSON();
+            const bounds = {
+                northEast: { lat: north, lng: east },
+                southWest: { lat: south, lng: west }
+            };
+            this.props.updateFilter('bounds', bounds);
+        });
+        google.maps.event.addListener(this.map, 'click', (event) => {
+            const coords = getCoordsObj(event.latLng);
+            this.handleClick(coords);
+        });
     }
 
     handleMarkerClick() {
