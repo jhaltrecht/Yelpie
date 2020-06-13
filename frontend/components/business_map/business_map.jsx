@@ -23,7 +23,7 @@ class BusinessMap extends React.Component {
             zoom: 13
         };
         this.map = new google.maps.Map(this.refs.map, mapOptions);
-        // this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
+        this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
 
 
     }
