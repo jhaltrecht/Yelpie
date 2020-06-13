@@ -11,7 +11,6 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    fetchBusinesses: id => dispatch(fetchBusinesses()),
     updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
 });
 

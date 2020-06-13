@@ -2,11 +2,9 @@ import React from 'react';
 import BusinessIndexItem from './business_index_item';
 import Search from "./search"
 
-const BusinessIndex = ({ businesses, fetchBusinesses,updateFilter }) => {
+const BusinessIndex = ({ businesses, updateFilter }) => {
 console.log(businesses)
-  if (businesses.length===0){
-    fetchBusinesses()
-  }
+ 
     return(
   <div className="business-index-container-div">
         <div className="search-index">

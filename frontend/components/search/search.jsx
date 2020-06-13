@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import FilterForm from './filter_form';
+import FilterForm from './filter_form';
 import BusinessIndex from './business_index';
 import BusinessMap from './../business_map/business_map';
 
@@ -10,13 +10,13 @@ const Search = ({ businesses,updateFilter}) => (
             <BusinessMap
                 businesses={businesses}
                 updateFilter={updateFilter}
-                // singleBusiness={false}
+                singleBusiness={false}
             />
         </div>
         <div className="right-half">
-            {/* <FilterForm
+            <FilterForm
                 updateFilter={updateFilter}
-            /> */}
+            />
         </div>
  </div>
 );

@@ -19,7 +19,7 @@ class BusinessMap extends React.Component {
                 lat: 34.052235,
                 lng: -118.243683
             }, // LA Coordinates
-            zoom: 13
+            zoom: 10
         };
         this.map = new google.maps.Map(this.refs.map, mapOptions);
         this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
@@ -29,7 +29,13 @@ class BusinessMap extends React.Component {
     }
 
     componentDidUpdate() {
-        
+        if (this.props.singleBusiness) {
+            const targetBusinessKey = Object.keys(this.props.businesses)[0];
+            const targetBusiness = this.props.businesses[targetBusinessKey];
+            this.MarkerManager.updateMarkers([targetBusiness]); //grabs only that one business
+        } else {
+            this.MarkerManager.updateMarkers(this.props.businesses);
+        }
     }
 
     registerListeners() {
