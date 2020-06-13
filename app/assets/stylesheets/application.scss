@@ -24,7 +24,7 @@ margin:0;}
 }
 
 .login-signup{
-    position: fixed;
+    // position: fixed;
 }
 
 .business-index-item{
@@ -81,8 +81,8 @@ text-align: center;
 // margin-top: 100px;
 font-size: 40px;
 // position: absolute;
-position: fixed;
-margin-left: 500px;
+// position: fixed;
+// margin-left: 500px;
 // position: sticky;
 
 }
@@ -109,15 +109,28 @@ margin-left: 500px;
 
 
 .review-li{
-position: fixed;
+// position: fixed;
 }
 .errors{
     color: red;
 }
 
+.business-index-container-div{
+    display: flex;
+    justify-content: space-around;
+}
+.search-index{
+width: 400px;
+   margin-left: 50px;
+   margin-top: 80px;
+   height: 480px;
+   padding: 0 20px 20px 20px;
+   color: white;
+}
 #map-container{
     width: 500px;
     height: 500px;
+    
 }
 .yelp-logo{
     width: 60px;
@@ -132,8 +145,8 @@ position: fixed;
     background-attachment: fixed;
 	
   /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
+//   width: 100%;
+//   height: auto;
 	
   /* Set up positioning */
 //   position: fixed;
@@ -148,7 +161,7 @@ position: fixed;
     color: white;
 }
 .header-group{
-    position: fixed;
+    // position: fixed;
 }
 
 .nav-bar li{
@@ -166,7 +179,7 @@ background-color: white;
 width: 200px;
 margin: auto auto;
 padding: 30px;
-position: fixed;
+// position: fixed;
 margin-left: 500px;
 margin-top: 120px;
 }
@@ -179,7 +192,6 @@ margin-top: 120px;
      margin-top: 80px;
      background-color: white;
    width: 400px;
-   margin-bottom: 5px;
    box-sizing: border-box;
    display: inline-block;
    justify-content: space-between;

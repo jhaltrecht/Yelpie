@@ -9,6 +9,9 @@ console.log(businesses)
   }
     return(
   <div className="business-index-container-div">
+        <div className="search-index">
+          <Search businesses={businesses} />
+        </div>
     <div className="business-index-container">
     <h1>Businesses: </h1>
     <h3>Click on the business to leave a review</h3>
@@ -19,9 +22,7 @@ console.log(businesses)
       />
     ))}
         </div>
-        <div className="search-index">
-          <Search businesses={businesses}  />
-        </div>
+        
   </div>
     )
 
