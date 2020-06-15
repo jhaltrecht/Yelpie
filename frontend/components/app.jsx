@@ -48,7 +48,7 @@ const App = () => (
             {/* <Route path="/reviews/:reviewId" component={ReviewShowContainer} /> 
 
             {/* <Route exact path="/" component={BusinessIndexContainer} /> */}
-         <Route exact path="/busiensses/:businessId" component={BusinessShowContainer} />
+         <Route exact path="/businesses/:businessId" component={BusinessShowContainer} />
 
         </Switch>
 
