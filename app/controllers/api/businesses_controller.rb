@@ -9,6 +9,7 @@ class Api::BusinessesController < ApplicationController
 
   def index
     # makes lookup more efficient in view
+     
       @businesses = Business.all.includes(:reviews)
       
       render  :index
