@@ -23,7 +23,12 @@ class BusinessMap extends React.Component {
         };
         this.map = new google.maps.Map(this.refs.map, mapOptions);
         this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
-        this.registerListeners();
+        if (this.props.singleBusiness) {
+            this.props.fetchBusiness(this.props.businessId);
+        } else {
+            this.registerListeners();
+            this.MarkerManager.updateMarkers(this.props.businesses);
+        }
 
 
     }

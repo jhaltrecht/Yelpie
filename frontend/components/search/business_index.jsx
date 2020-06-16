@@ -1,16 +1,14 @@
 import React from 'react';
 import BusinessIndexItem from './business_index_item';
 import Search from "./search"
-// import FilterForm from "./filter_form"
 
 const BusinessIndex = ({ businesses, updateFilter }) => {
-console.log(businesses)
  
     return(
   <div className="business-index-container-div">
         <div className="search-index">
-          <Search businesses={businesses} 
-          updateFilter={updateFilter}/>
+          <Search businesses={businesses}
+            updateFilter={updateFilter} />
         </div>
     <div className="business-index-container">
     <h1 className="business-index-header">Businesses: </h1>
