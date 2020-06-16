@@ -13,7 +13,7 @@ console.log(businesses)
           updateFilter={updateFilter}/>
         </div>
     <div className="business-index-container">
-    <h1>Businesses: </h1>
+    <h1 className="business-index-header">Businesses: </h1>
     <h3>Click on the business to leave a review</h3>
     {businesses.map(business => (
       <BusinessIndexItem
