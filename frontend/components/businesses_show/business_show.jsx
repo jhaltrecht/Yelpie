@@ -23,8 +23,11 @@ const BusinessShow = ({ business, businessId,fetchBusiness, reviews }) => {
                     fetchBusiness={fetchBusiness}
                 />
             </div>
+            
             <div className="right-half-business-details">
+                <br/>
                 <BusinessDetail business={business} reviews={reviews} />
+                <br/>
                 <ReviewLink className="review-link"
                     component={ReviewFormContainer}
                     to={`/businesses/${businessId}/review`}

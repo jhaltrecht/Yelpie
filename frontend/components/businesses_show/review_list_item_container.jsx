@@ -7,6 +7,7 @@ const Review = ({ review, author }) => {
     <div>
       <ul>
         <li>Rating: {rating}</li>
+        <br/>
         <li>{body} - by {author.username}</li>
 
       </ul>

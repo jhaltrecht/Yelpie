@@ -24,13 +24,15 @@ class BusinessIndexItem extends React.Component {
                 <div className="index-item-info">
                     <span className="index-item-title"><b>Title: </b></span>
         <span>{name}</span>
+
+        <br/>
         <br/>
                     <span className="index-item-category"><b> Rating:</b> </span>
                     <span className="index-item-copy">
                         {average_rating || 'No reviews yet'}
                     </span>
                     <br />
-
+<br/>
                     <span className="index-item-category"><b>Description: </b> </span>
                     <span className="index-item-copy">{description}</span>
                 </div>
