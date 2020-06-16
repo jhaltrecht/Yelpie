@@ -14,12 +14,18 @@ const reviewList = (reviews) => (
 
 const BusinessDetail = ({ business, reviews }) => {
   return (
-    <div>
+    <div className="business-list-div">
       <ul className="business-list">
         <img className="index-image" src={business.picture_url}/>
         <li>Rating: {business.average_rating || 'No reviews yet'}</li>
+        <br />
+
+        <br/>
         <li>Description: {business.description}</li>
-        <li>Latitude: {business.lat}</li>
+        <br/>
+        <br/>
+        <li>Latitude:    {business.lat}</li>
+        <br/>
         <li>Longitude: {business.lng}</li>
       </ul>
       <br/>

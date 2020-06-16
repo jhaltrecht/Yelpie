@@ -1,6 +1,7 @@
 import React from 'react';
 import BusinessIndexItem from './business_index_item';
 import Search from "./search"
+// import FilterForm from "./filter_form"
 
 const BusinessIndex = ({ businesses, updateFilter }) => {
 console.log(businesses)

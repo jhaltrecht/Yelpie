@@ -9,3 +9,5 @@ end
       json.partial! 'api/reviews/review', review: review
     end
   end
+
+ 

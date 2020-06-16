@@ -132,6 +132,35 @@ font-size: 40px;
     display: flex;
     justify-content: space-around;
 }
+
+.single-business-show{
+        display: flex;
+}
+
+.single-business-map{
+    margin: 10px;
+    margin-right: 250px;
+    margin-left: 10px;
+}
+// .business-list-div{
+// margin-right: 40px;
+// }
+
+.right-half-business-details{
+    // margin-right: 50px;
+    padding: 20px;
+    background-color: white;
+color: black;
+border: 1px solid black;
+width: 300px;
+margin: 10px;
+}
+
+.index-image{
+    max-height: 300px;
+   max-width: 300px;
+}
+
 .search-index{
 width: 400px;
    margin-left: 50px;
