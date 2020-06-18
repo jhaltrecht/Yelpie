@@ -31,8 +31,8 @@ b2=Business.create!(
     name:'McDonalds',
     picture_url:"https://cdn.pixabay.com/photo/2016/11/22/23/23/french-fries-1851143_1280.jpg",
     description: "Fastfood restaurant serving american burgers and fries",
-    lat:40.5775559,
-    lng:-74.10240269999997
+    lat:34.034024,
+    lng:-118.473376
 )
 b3=Business.create!(
      name:'Dairy Queen',

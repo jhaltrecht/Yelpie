@@ -9,8 +9,14 @@ class Api::BusinessesController < ApplicationController
 
   def index
     # makes lookup more efficient in view
-    
-      @businesses = Business.all.includes(:reviews)
+     businesses = bounds ? Business.in_bounds(bounds) : Business.all
+  if params[:name]==""
+    businesses=Business.all 
+  elsif params[:name] 
+      businesses = businesses.where('lower(name) LIKE ?', "#{params[:name].downcase}%")
+    end
+
+    @businesses = businesses.includes(:reviews)
     
       render  :index
   end
@@ -24,6 +30,11 @@ class Api::BusinessesController < ApplicationController
       :picture_url
     )
   end
+
+  def bounds
+    params[:bounds]
+  end
+
 
   
 
