@@ -6,12 +6,27 @@ import BusinessMap from '../business_map/business_map';
 import ReviewFormContainer from './review_form_container';
 import { ProtectedRoute } from '../../util/route_util';
 import { ReviewLink } from '../../util/link_util';
+import { render } from 'react-dom';
 
-const BusinessShow = ({ business, businessId,fetchBusiness, reviews }) => {
+const BusinessShow = ({ business, businessId,fetchBusiness,session, reviews }) => {
     const businesses = {
         [businessId]: business
     };
 
+        let renderFunc;
+            if (session.id > 0){
+            renderFunc=(
+                <div>
+                    <h3>Leave a Review:</h3>
+                    <ReviewFormContainer />
+                </div>
+            );
+            }
+            else {renderFunc=(
+                <div>
+                    <h3>Login to leave a review</h3>
+                </div>
+            )}
     return (
         <div className="single-business-show">
             <div className="single-business-map">
@@ -28,18 +43,17 @@ const BusinessShow = ({ business, businessId,fetchBusiness, reviews }) => {
                 <br/>
                 <BusinessDetail business={business} reviews={reviews} />
                 <br/>
-                <ReviewLink className="review-link"
+                {/* <ReviewLink className="review-link"
                     component={ReviewFormContainer}
                     to={`/businesses/${businessId}/review`}
                     label="Leave a Review"
-                />
-                <ProtectedRoute
-                    path="/businesses/:businessId/review"
-                    component={ReviewFormContainer}
-                />
+                /> */}
+                {renderFunc}
+                
             </div>
         </div>
     );
-};
+            }
+
 
 export default BusinessShow;

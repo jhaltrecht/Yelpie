@@ -8,10 +8,12 @@ const mapStateToProps = (state, { match }) => {
     const businessId = parseInt(match.params.businessId);
     const business = selectBusiness(state.entities, businessId);
     const reviews = selectReviewsForBusiness(state.entities, business);
+    const session= state.session
     return {
         businessId,
         business,
-        reviews
+        reviews,
+        session
     };
 };
 
