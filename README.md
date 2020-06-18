@@ -1,3 +1,27 @@
-# README
+# Yelpie README
+
+
 
 Live Site: https://yelpie2.herokuapp.com/
+ 
+
+Yelpie is an application inspired by Yelp, an application for local business review. The site has pages for individual businesses where Yelpie users can submit a review of their products or services using a one to five star rating system and a comment box.
+
+Yelpie was implented using Ruby on Rails (Ruby, JavaScript, React, Redux, HTML, CSS, and SQL/Active Record). The production version of this app is currently deployed to Heroku.
+
+Key Features Implemented:
+
+### New account creation, login, and guest/demo login 
+* Users can sign up, sign in, log out
+* Users can't use certain features without logging in (creating reviews)
+###  Business Page 
+* Includes services offered, photos
+* Includes individual reviews and the business' rating on a 5 star scale
+### Reviews/Ratings  
+* Logged in users can create reviews
+* Users can view a list of reviews
+### Map 
+* Utilize the google maps javascript plugin 
+* Shows pins for businesses on both the index page and on the show page
+* Users can search for businesses which adjust the pins on the map
+
