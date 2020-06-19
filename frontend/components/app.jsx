@@ -14,7 +14,7 @@ import LogInFormContainer from './session_form/login_form_container';
 import BusinessIndexContainer from './search/business_index_container';
 import BusinessShowContainer from "./businesses_show/business_show_container"
 
-import ReviewFormContainer from './reviews/review_form_container';
+// import ReviewFormContainer from './reviews/review_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
@@ -41,7 +41,6 @@ const App = () => (
         <Switch>
             <AuthRoute exact path="/login" component={LogInFormContainer} />
             <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-                <ProtectedRoute exact path="/businesses/:businessId/review" component={ReviewFormContainer} />
              <Route exact path="/" component={BusinessIndexContainer} /> */}
          <Route exact path="/businesses/:businessId" component={BusinessShowContainer} />
 
