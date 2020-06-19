@@ -26,7 +26,8 @@ Key Features Implemented:
 * Users can search for businesses, which will adjust the pins on the map
 
 See https://github.com/jhaltrecht/Yelpie/wiki for the following items:
-* MVP List Schema
+* MVP List 
+* Schema
 * Sample State
 * Frontend routes and components
 * Backend Routes
