@@ -24,7 +24,7 @@ const BusinessShow = ({ business, businessId,fetchBusiness,session, reviews }) =
             }
             else {renderFunc=(
                 <div>
-                    <h3>Login to leave a review</h3>
+                    <h3><Link to="/login">Login to leave a review</Link></h3>
                 </div>
             )}
     return (
