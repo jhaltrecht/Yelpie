@@ -6,10 +6,12 @@ const Review = ({ review, author }) => {
   return (
     <div>
       <ul>
+
         <li>Rating: {rating}</li>
         <br/>
         <li>{body} - by {author.username}</li>
-
+        <br/>
+<br/>
       </ul>
     </div>
   );
