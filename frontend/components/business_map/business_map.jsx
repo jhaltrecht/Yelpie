@@ -19,7 +19,7 @@ class BusinessMap extends React.Component {
                 lat: 34.052235,
                 lng: -118.243683
             }, // LA Coordinates
-            zoom: 10
+            zoom: 9
         };
         this.map = new google.maps.Map(this.refs.map, mapOptions);
         this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
