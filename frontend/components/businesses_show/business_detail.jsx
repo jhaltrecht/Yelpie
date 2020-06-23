@@ -15,6 +15,7 @@ const BusinessDetail = ({ business, reviews }) => {
   return (
     <div className="business-list-div">
       <ul className="business-list">
+        <li className="bus-title">{business.name}</li>
         <img className="index-image" src={business.picture_url}/>
         <li>Rating: {business.average_rating || 'No reviews yet'}</li>
         <br />
