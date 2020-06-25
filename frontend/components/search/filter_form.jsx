@@ -23,7 +23,9 @@ const FilterForm = ({ name ,updateFilter }) => (
             value={name}
             onChange={handleChange('name', updateFilter)}
         /> 
-         <button onClick={()=>{
+         <button 
+         className="filter-button"
+         onClick={()=>{
             clearChange('name', updateFilter)();
             inputClear();
         }}
