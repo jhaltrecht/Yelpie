@@ -6,9 +6,11 @@ const handleChange = (filter, updateFilter) => e => (
 
 const clearChange = (filter, updateFilter) => e => (
     updateFilter(filter, "")
-
 );
 
+const inputClear=()=>(
+    document.getElementById('input-filter').value = ""
+)
 
 const FilterForm = ({ name ,updateFilter }) => (
     <div>
@@ -16,17 +18,16 @@ const FilterForm = ({ name ,updateFilter }) => (
         <br />
         <label>Business Name: </label>
         <input 
-        className="input-filter"
+        id="input-filter"
             type="text"
             value={name}
             onChange={handleChange('name', updateFilter)}
         /> 
-        {/* <button onClick={
-            clearChange('name', updateFilter)
-            // ;
-            // document.getElementById('input-filter').value = "" 
-        }
-        >Clear Result:</button> */}
+         <button onClick={()=>{
+            clearChange('name', updateFilter)();
+            inputClear();
+        }}
+        >Clear Result:</button> 
         <br />
     </div>
 );
